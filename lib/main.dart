@@ -25,6 +25,13 @@ class _DicePageState extends State<DicePage> {
   int leftindex = Random().nextInt(6) + 1;
   int rightindex = Random().nextInt(6) + 1;
   int  max = 6;
+  void GenerateRandomNumber()
+  {
+    leftindex = Random().nextInt(max);
+    leftindex += 1;
+    rightindex = Random().nextInt(max);
+    rightindex += 1;
+  }
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -34,8 +41,7 @@ class _DicePageState extends State<DicePage> {
             child: FlatButton(
               onPressed: (){
                 setState(() {
-                  leftindex = Random().nextInt(max);
-                  leftindex += 1;
+                  GenerateRandomNumber();
                 });
               },
               child: Image(
@@ -55,8 +61,7 @@ class _DicePageState extends State<DicePage> {
             child: FlatButton(
               onPressed: (){
                 setState(() {
-                  rightindex = Random().nextInt(max);
-                  rightindex += 1;
+                  GenerateRandomNumber();
                 });
               },
               child: Image(
