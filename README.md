@@ -12,4 +12,4 @@ This is a Las Vegas dice app. You can make the die roll at the press of a button
 
 >This is a companion project to The App Brewery's Complete Flutter Developement Bootcamp.
 
-![End Banner](Documentation/readme-end-banner.png)
+
